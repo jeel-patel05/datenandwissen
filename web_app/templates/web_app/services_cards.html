@@ -1,0 +1,81 @@
+{% load static %}
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+        <link href="{% static 'css/highlight.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container-fixed stacked-cards stacked-cards-slide">
+                <h3 id="services">What We Provide?</h3>
+                <ul>
+                    <li>
+                        <div class="card-image">
+                            <img src="{% static 'img/strategy.png' %}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Strategy and Consulting</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        
+                    </li>
+    
+                    <li>
+                        <div class="card-image">
+                            <img src="{% static 'img/programing.png' %}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div class="card-image">
+                            <img src="{% static 'img/handshake.png' %}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Customization</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div class="card-image">
+                            <img src="{% static 'img/implementer.png' %}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Implementation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div> 
+                    </li>
+    
+                    <li>
+                        <div class="card-image">
+                            <img src="{% static 'img/intersection.png' %}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Integration</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="{% static 'js/stackedCards.min.js' %}"></script>
+
+    
+        <script>
+            var stackedCardSlide = new stackedCards({
+                 selector: '.stacked-cards-slide',
+                 layout: "slide",
+                 transformOrigin: "center",
+             });
+    
+            stackedCardSlide.init();
+        </script>
+    </body>
+</html>

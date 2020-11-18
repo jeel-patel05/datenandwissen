@@ -1,0 +1,110 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    {% include 'web_app/headLinks.html' %}
+</head>
+
+<body>
+
+    {% include 'web_app/header.html' %}
+    
+    {% include 'web_app/bradcam.html' %}
+ 
+
+    <div class="case_study_area case_page">
+        <div class="container">
+            <div class="row">
+                    <div class="col-xl-12">
+                        <div class="portfolio-menu text-center">
+                            <button class="active" data-filter="*">All</button>
+                            <button data-filter=".cat1">Healthcare</button>
+                            <button data-filter=".cat2">Defence</button>
+                            <button data-filter=".cat3">Shipping</button>
+                            <button data-filter=".cat4">Education</button>
+                            <button data-filter=".cat5">Chatbot</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="row grid">
+                <div class="col-xl-4 grid-item cat1">
+                    <div class="single_case">
+                        <div class="case_thumb">
+                            <img src="{% static 'img/healthcare.jpeg' %}" alt="">
+                        </div>
+                        <div class="case_heading">
+                            <span>AI + healthcare</span>
+                            <h3><a href="{% url 'case1' %}">Did you ever think of machines serving you?</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid-item cat2">
+                    <div class="single_case">
+                        <div class="case_thumb">
+                            <img src="{% static 'img/defence.jpg' %}" alt="">
+                        </div>
+                        <div class="case_heading">
+                            <span>AI + defense</span>
+                            <h3><a href="{% url 'case2' %}">How AI is in the interest of national security and defence?</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid-item cat3">
+                    <div class="single_case">
+                        <div class="case_thumb">
+                            <img src="{% static 'img/shipping.jpg' %}" alt="">
+                        </div>
+                        <div class="case_heading">
+                            <span>AI + maritime industry</span>
+                            <h3><a href="{% url 'case3' %}">Ever wished your imported item to be delivered in fewer days?</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid-item cat1">
+                    <div class="single_case">
+                        <div class="case_thumb">
+                            <img src="{% static 'img/healthcare1.jpg' %}" alt="">
+                        </div>
+                        <div class="case_heading">
+                            <span>AI + telemeds</span>
+                            <h3><a href="{% url 'case4' %}">How about meeting a doctor from the comfort of your home?</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid-item cat4">
+                    <div class="single_case">
+                        <div class="case_thumb">
+                            <img src="{% static 'img/education.jpeg' %}" alt="">
+                        </div>
+                        <div class="case_heading">
+                            <span>AI + education</span>
+                            <h3><a href="{% url 'case5' %}">How exhilarating is it to see computers teaching humans!</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid-item cat5">
+                    <div class="single_case">
+                        <div class="case_thumb">
+                            <img src="{% static 'img/chatbot.jpg' %}" alt="">
+                        </div>
+                        <div class="case_heading">
+                            <span>AI + chatbot</span>
+                            <h3><a href="{% url 'case6' %}">What if I say that your query was solved by a chatbot?</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    {% include 'web_app/cta.html' %}
+  
+    {% include 'web_app/footer.html' %}
+
+    {% include 'web_app/scriptLinks.html' %}
+
+</body>
+
+</html>

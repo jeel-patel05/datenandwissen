@@ -1,0 +1,148 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    {% include 'web_app/headLinks.html' %}
+</head>
+
+<body>
+    <header>
+        <div class="header-area ">
+            <div class="header-top_area d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-md-5 ">
+                            <div class="header_left">
+                                <p>Welcome to D&W Tech Consulting Service</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-md-7">
+                            <div class="header_right d-flex">
+                                    <div class="short_contact_list">
+                                            <ul>
+                                                <li><a href="#"> <i class="fa fa-envelope"></i> abcd@gmail.com</a></li>
+                                                <li><a href="#"> <i class="fa fa-phone"></i>+91-0000000000</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="social_media_links">
+                                            <a href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sticky-header" class="main-header-area details_nav">
+                <div class="container">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-2">
+                                <div class="logo">
+                                    <a href="{% url 'index' %}">
+                                        <img src="{% static 'img/logo3.png' %}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-7">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="{% url 'index' %}">home</a></li>
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="{% url 'services' %}">Services</a></li>
+                                            <li><a class="active" href="{% url 'study' %}">Case study</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="Appointment">
+                                    <div class="book_btn d-none d-lg-block">
+                                        <a  href="#">Get a Case Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="case_details_area">
+        <div class="container">
+            <div class="border_bottom">
+                    <div class="row ">
+                            <div class="col-xl-12">
+                                <div class="details_title">
+                                    <span>{{title}}</span>
+                                    <h3>{{subtitle}}</h3>
+                                </div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="details_main_wrap">
+                                    <p class="details_info">
+                                        {{description}}
+                                    </p>
+                                    <div class="single_details">
+                                        <span>Analysis</span>
+                                        <ul>
+                                            {% for i in analysis %}
+                                                <li>{{i}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <div class="single_details">
+                                        <span>Recommendation</span>
+                                        <ul>
+                                            {% for i in recommend %}
+                                                <li>{{i}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <div class="single_details">
+                                        <span>Where there are pros there are cons</span>
+                                        <ul>
+                                            {% for i in pros_cons %}
+                                                <li>{{i}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <div class="single_details">
+                                        <span>Conclusion</span>
+                                        <ul>
+                                        {% for i in conclusion %}
+                                            <li>{{i}}</li>
+                                        {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'web_app/footer.html' %}
+
+
+    {% include 'web_app/scriptLinks.html' %}
+</body>
+
+</html>

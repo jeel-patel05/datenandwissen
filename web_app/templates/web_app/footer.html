@@ -1,0 +1,93 @@
+{% load static %}
+
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="{% static 'img/dnw-logo.png' %}" alt="">
+                            </a>
+                        </div>
+                        <p>
+                            Contact Us: <br>
+                                <a href="#">contact.us@daten-wissen.com</a> <br>
+                                +91 9766196543, +91 9820080751 <br> 
+                        
+                                Address: <br>
+                                G-3, Matru Chaya Apartment, Cabin cross road, opposite to Mahadev Mandir, Bhayander(E) Thane - 401105
+                        </p>
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-3">
+                    <div class="footer_widget other_widget">
+                        <h3 class="footer_title">
+                                Services
+                        </h3>
+                        <ul>
+                            <li><a href="#">Strategy and Consulting</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Customization</a></li>
+                            <li><a href="#">Implementation</a></li>
+                            <li><a href="#">Integration</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="footer_widget other_widget">
+                        <h3 class="footer_title">
+                                Useful Links
+                        </h3>
+                        <ul>
+                            <li><a href="{% url 'about' %}">About Us</a></li>
+                            <li><a href="{% url 'contact' %}"> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget other_widget">
+                                <h3 class="footer_title">
+                                        Company
+                                </h3>
+                                <p class="newsletter_text">Daten & Wissen is the fastest-growing company with a team of experts in Artifical Intelligence. We provide agile and smart AI solutions to initiate your business transformation journey.</p>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is developed <i class="" aria-hidden="true"></i> by <a>Jeel Patel & Yash Patwa</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
